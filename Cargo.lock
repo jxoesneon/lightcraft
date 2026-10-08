@@ -3084,6 +3084,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "lightcraft-ui-martensite"
+version = "0.2.1"
+dependencies = [
+ "proptest",
+ "serde",
+ "serde_json",
+ "tracing",
+]
+
+[[package]]
 name = "lightcraft-web"
 version = "0.2.1"
 dependencies = [
