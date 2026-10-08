@@ -11,6 +11,7 @@ repository = "https://github.com/storytold/lightcraft"
 
 [workspace.dependencies]
 tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 # internal
 lightcraft-geom = { path = "crates/geom" }
 lightcraft-sysmem = { path = "crates/sysmem" }
@@ -29,6 +30,7 @@ lightcraft-preview = { path = "crates/preview" }
 lightcraft-merge = { path = "crates/merge" }
 lightcraft-engine = { path = "crates/engine" }
 lightcraft-ui-egui = { path = "crates/ui-egui" }
+lightcraft-ui-martensite = { path = "crates/ui-martensite" }
 lightcraft-mcp = { path = "crates/mcp" }
 lightcraft-fetch = { path = "crates/fetch" }
 lightcraft-segment = { path = "crates/segment" }

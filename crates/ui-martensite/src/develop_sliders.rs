@@ -2,16 +2,16 @@
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct DevelopParams {
-    pub temperature: u32,  // 2000K .. 50000K
-    pub tint: i32,         // -150 .. +150
-    pub exposure: f32,     // -5.0 .. +5.0 EV
-    pub contrast: f32,     // -100 .. +100
-    pub highlights: f32,   // -100 .. +100
-    pub shadows: f32,      // -100 .. +100
-    pub whites: f32,       // -100 .. +100
-    pub blacks: f32,       // -100 .. +100
-    pub vibrance: f32,     // -100 .. +100
-    pub saturation: f32,   // -100 .. +100
+    pub temperature: u32, // 2000K .. 50000K
+    pub tint: i32,        // -150 .. +150
+    pub exposure: f32,    // -5.0 .. +5.0 EV
+    pub contrast: f32,    // -100 .. +100
+    pub highlights: f32,  // -100 .. +100
+    pub shadows: f32,     // -100 .. +100
+    pub whites: f32,      // -100 .. +100
+    pub blacks: f32,      // -100 .. +100
+    pub vibrance: f32,    // -100 .. +100
+    pub saturation: f32,  // -100 .. +100
 }
 
 impl Default for DevelopParams {

@@ -72,6 +72,28 @@ pub enum EngineError {
 
 pub type Result<T> = std::result::Result<T, EngineError>;
 
+/// The application engine: library session, commands, history and develop state.
+/// Named `Engine` so UIs (egui, Martensite, headless) refer to one type.
+pub type Engine = Session;
+
+/// Tool identity, in toolbar order. UI-agnostic so every front-end shares the
+/// canonical list; each UI maps it to its own presentation.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Tool {
+    Grid,
+    Loupe,
+    Compare,
+    Survey,
+    Crop,
+    SpotRemove,
+    RedEye,
+    MaskingBrush,
+    LinearGradient,
+    RadialGradient,
+    Hand,
+    Zoom,
+}
+
 /// One undo step: the inverse op and a label.
 #[derive(Clone, Debug)]
 pub struct UndoEntry {
